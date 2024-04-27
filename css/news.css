@@ -1,10 +1,11 @@
 @charset "UTF-8";
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Шапка сайта */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,7 @@ body {
   color: #fff;
 }
 
-/* Логотип и название сайта */
+
 .logo {
   display: flex;
   align-items: center;
@@ -22,7 +23,6 @@ body {
 
 .logo img {
   width: 40px;
-  /* Размер иконки сайта */
   margin-right: 10px;
 }
 
@@ -30,7 +30,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Меню */
 .menu-list {
   list-style-type: none;
   margin: 0;
@@ -51,7 +50,7 @@ body {
   text-decoration: none;
 }
 
-/* Бургер меню */
+
 .burger-menu {
   display: none;
   background: none;
@@ -86,25 +85,24 @@ body {
   bottom: -8px;
 }
 
-/* Медиа-запрос для бургер меню */
+
 @media screen and (max-width: 1200px) {
   .menu-list {
     display: none;
   }
+
   .burger-menu {
     display: block;
   }
 }
-/* Стиль для активного меню */
+
 .menu-list.is-active {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 60px;
-  /* Відрегулюйте відповідно до вашої шапки */
   background-color: #333;
   width: 100%;
-  /* Повна ширина на малих екранах */
   padding: 10px 0;
 }
 
@@ -138,4 +136,4 @@ p {
 .main_div {
   display: flex;
   height: 100%;
-}/*# sourceMappingURL=news.css.map */
+}
